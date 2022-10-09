@@ -1,0 +1,37 @@
+.btnPrimario{
+    width: 130px;
+    height: 50px;
+    background-color: var(--pink-trans);
+    border: 1px solid var(--pink-trans);
+    border-radius: 4px;
+    color: var(--letterColorWhite);
+    padding: 0 20px;
+}
+.btnPrimario:hover{
+    background-color: var(--pink-trans-focus);
+    border: 1px solid var(--pink-trans-focus);
+}
+.btnDesabilitado{
+    width: 130px;
+    height: 50px;
+    background-color: var(--colorPrimaryNegative);
+    border: 1px solid var(--colorPrimaryNegative);
+    border-radius: 4px;
+    color: var(--letterColorWhite);
+    padding: 0 20px;
+}
+.btnNegativo{
+    width: 130px;
+    height: 50px;
+    background-color: var(--grey2);
+    border: 1px solid var(--grey2);
+    border-radius: 4px;
+    color: var(--letterColorWhite);
+    padding: 0 20px;
+}
+.btnNegativo:hover{
+    background-color: var(--grey1);
+    border: 1px solid var(--grey1);
+}
+
+

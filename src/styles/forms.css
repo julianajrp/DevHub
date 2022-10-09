@@ -1,0 +1,87 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.containerTop{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    text-align: center;
+    justify-content: space-between;
+}
+.containerForm{
+    background-color: var(--bcgFormColor);
+    padding: 40px;
+    border-radius: 8px;
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.inputs::placeholder{
+    color: var(--grey1);
+}
+.labelDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+
+}
+.voltar{
+    width: 70px;
+    height: 40px;
+    text-align: center;
+}
+.clicable{
+    cursor: pointer;
+}
+.clicable:hover{
+    color: var(--letterColorWhite);
+}
+@media (max-width: 431px){
+   .containerForm{
+    width: 380px;
+   }
+}
+@media (max-width: 390px){
+    .containerForm{
+     width: 350px;
+    }
+ }
+ @media (max-width: 370px){
+    .containerForm{
+     width: 320px;
+    }
+    .labelDiv{
+        width: 280px;
+    }
+    .inputs{
+        width: 270px;
+    }
+    .select{
+        width: 270px;
+    }
+ }
+ @media (max-width: 340px){
+    .containerForm{
+     width: 290px;
+    }
+    .labelDiv{
+        width: 240px;
+    }
+    .inputs{
+        width: 220px;
+    }
+    .select{
+        width: 220px;
+    }
+ }

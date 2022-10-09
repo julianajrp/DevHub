@@ -1,0 +1,11 @@
+@import './styles/reset.css';
+@import './styles/global.css';
+@import './styles/typography.css';
+@import './styles/buttons.css';
+@import './styles/inputs.css';
+@import './styles/forms.css';
+
+body{
+    background-color: var(--bcgColor);
+    color: var(--letterColorWhite);
+}

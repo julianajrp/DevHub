@@ -1,0 +1,30 @@
+.containerDashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.headerBtn{
+    padding: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--grey1);
+}
+.btnSair{
+    margin-bottom: 10px;
+}
+.containerLine1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey1);
+    padding: 15px;
+    padding-bottom: 40px;
+    color: var(--letterColorWhite);
+}
+.containerContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: var(--letterColorWhite);
+    margin: 15px;
+}

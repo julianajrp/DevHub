@@ -1,0 +1,30 @@
+:root{
+    /*colors*/
+
+    --colorPrimary: #FF577F;
+    --colorPrimaryFocus: #FF427F;
+    --colorPrimaryNegative: #59323f;
+    --transitionColor: linear-gradient(91deg, #ff01a5d4, #4b00ffd4);
+    --pink-trans: rgb(255, 1, 166);
+    --pink-trans-focus: #ff01a5d4;
+    --blue-trans: rgba(75, 0, 255, 0.831);
+    /* gray scale pallet*/
+    
+    --grey0: #f8f9fa;
+    --grey1: #868e96;
+    --grey2: #343b41;
+    --grey3: #212529;
+    --grey4: #121214;
+    
+    /*feedback pallet*/
+    --negative: #e83f5b;
+    --sucess: #3fe864;
+    
+    /*background*/
+    --bcgColor: #121214;
+    --bcgFormColor: #212529;
+    --bcgInputColor: #343B41;
+    --letterColorNormal: #F8F9FA;
+    --letterColorWhite: #fff;
+
+}

@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5 ,h6, p, span, li{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+.LogoTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--pink-trans);
+}
+.Title1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+.Title2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+.Title3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+.Headline{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+.HeadlineBold{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+.HeadlineItalic{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+}
+.colorPink{
+    color: var(--pink-trans);
+}
+.colorWhite{
+    color: var(--letterColorWhite);
+}
+.colorNormal{
+    color: var(--letterColorNormal);
+}
+.colorGrey{
+    color: var(--grey1);
+}
+.errorMessage{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--negative);
+}
