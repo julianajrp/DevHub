@@ -1,12 +1,12 @@
 # Dev Hub
 
-Webpage tha's shows in what level of the developer course you are register in!
+Webpage that shows in what level of the developer course you are register in!
 
 ## Acess:
 
 Access link: https://devhub-gilt.vercel.app
 
-## Funcionalidades
+## Funcionalities
 
 - Register
 - Login
