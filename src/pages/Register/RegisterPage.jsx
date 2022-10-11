@@ -4,7 +4,11 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import { InputDefault } from "../../components/NotFoundStyledComponent/InputsComponents";
+import {
+  BtnNegativo,
+  BtnPrimario,
+} from "../../components/NotFoundStyledComponent/ButtonsComponents";
 const RegisterPage = ({ baseUrl, toast }) => {
   const navigate = useNavigate();
   const goBackToLogin = () => {
@@ -68,9 +72,9 @@ const RegisterPage = ({ baseUrl, toast }) => {
     <div className="mainContainer">
       <div className="containerTop">
         <p className="LogoTitle">Dev Hub</p>
-        <button className="btnNegativo voltar" onClick={goBackToLogin}>
+        <BtnNegativo className="voltar" onClick={goBackToLogin}>
           Back
-        </button>
+        </BtnNegativo>
       </div>
       <div className="containerForm">
         <h1 className="Title1 colorWhite">Create account</h1>
@@ -84,11 +88,11 @@ const RegisterPage = ({ baseUrl, toast }) => {
             <label htmlFor="name" className="Headline colorNormal labels">
               Name
             </label>
-            <input
+            <InputDefault
               id="name"
               placeholder="Type your name"
               {...register("name")}
-              className="inputDefault inputs"
+              className="inputs"
             />
             <p className="errorMessage">{errors.name?.message}</p>
           </div>
@@ -96,11 +100,11 @@ const RegisterPage = ({ baseUrl, toast }) => {
             <label htmlFor="email" className="Headline colorNormal labels">
               Email
             </label>
-            <input
+            <InputDefault
               id="email"
               placeholder="Type your email"
               {...register("email")}
-              className="inputDefault inputs"
+              className="inputs"
             />
             <p className="errorMessage">{errors.email?.message}</p>
           </div>
@@ -108,11 +112,11 @@ const RegisterPage = ({ baseUrl, toast }) => {
             <label htmlFor="password" className="Headline colorNormal labels">
               Password
             </label>
-            <input
+            <InputDefault
               id="password"
               placeholder="Type your password"
               {...register("password")}
-              className="inputDefault inputs"
+              className="inputs"
               type="password"
             />
             <p className="errorMessage">{errors.password?.message}</p>
@@ -124,12 +128,12 @@ const RegisterPage = ({ baseUrl, toast }) => {
             >
               Confirm Password
             </label>
-            <input
+            <InputDefault
               id="confirmPassword"
               type="password"
               placeholder="Confirm your password"
               {...register("confirm_password")}
-              className="inputDefault inputs"
+              className="inputs"
             />
             <p className="errorMessage">{errors.confirm_password?.message}</p>
           </div>
@@ -137,11 +141,11 @@ const RegisterPage = ({ baseUrl, toast }) => {
             <label htmlFor="about" className="Headline colorNormal labels">
               Bio
             </label>
-            <input
+            <InputDefault
               id="about"
               placeholder="Talk about you"
               {...register("bio")}
-              className="inputDefault inputs"
+              className="inputs"
             />
             <p className="errorMessage">{errors.bio?.message}</p>
           </div>
@@ -149,11 +153,11 @@ const RegisterPage = ({ baseUrl, toast }) => {
             <label htmlFor="contact" className="Headline colorNormal labels">
               Contact
             </label>
-            <input
+            <InputDefault
               id="contact"
               placeholder="Contact option"
               {...register("contact")}
-              className="inputDefault inputs"
+              className="inputs"
             />
             <p className="errorMessage">{errors.contact?.message}</p>
           </div>
@@ -187,9 +191,7 @@ const RegisterPage = ({ baseUrl, toast }) => {
               </option>
             </select>
           </div>
-          <button type="submit" className="btnPrimario">
-            Register
-          </button>
+          <BtnPrimario type="submit">Register</BtnPrimario>
         </form>
       </div>
     </div>

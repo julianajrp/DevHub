@@ -8,3 +8,6 @@ export const DivImg = styled.div`
   margin-top: 100px;
   gap: 10px;
 `;
+export const H1NotFound = styled.h1`
+  color: var(--letterColorWhite);
+`;

@@ -4,6 +4,11 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
+import { InputDefault } from "../../components/NotFoundStyledComponent/InputsComponents";
+import {
+  BtnNegativo,
+  BtnPrimario,
+} from "../../components/NotFoundStyledComponent/ButtonsComponents";
 const LoginPage = ({ setAuthentication, setUser, setModulo, toast }) => {
   const navigate = useNavigate();
 
@@ -62,9 +67,9 @@ const LoginPage = ({ setAuthentication, setUser, setModulo, toast }) => {
         <form className="Form FormLogin" onSubmit={handleSubmit(logIn)}>
           <div className="labelDiv">
             <label className="Headline colorNormal labels">Email</label>
-            <input
+            <InputDefault
               type="text"
-              className="inputDefault inputs"
+              className="inputs"
               placeholder="Type your email"
               {...register("email")}
             />
@@ -80,15 +85,13 @@ const LoginPage = ({ setAuthentication, setUser, setModulo, toast }) => {
             />
             <p className="errorMessage">{errors.password?.message}</p>
           </div>
-          <button type="submit" className="btnPrimario">
-            Entrar
-          </button>
+          <BtnPrimario type="submit">Login</BtnPrimario>
           <span className="Headline colorGrey clicable" onClick={goToRegister}>
             Doesn't have an account yet?
           </span>
-          <button className="btnNegativo" onClick={goToRegister}>
+          <BtnNegativo className="btnNegativo" onClick={goToRegister}>
             Register Page
-          </button>
+          </BtnNegativo>
         </form>
       </div>
     </div>
